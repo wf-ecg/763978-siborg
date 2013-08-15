@@ -3,11 +3,9 @@
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 //  force array to share indexed values thru key property expandos
-
 var Reidx;
 
 (function (W) { //IIFE
-
     var name = 'Reidx',
         self, DB;
     console.quebug('load ' + name + ' (expandro)');
@@ -18,7 +16,6 @@ var Reidx;
 
     function reindexKey(val, idx, all) {
         // underscorejs standardize iterator
-
         if (!val.key) {
             return;
         }

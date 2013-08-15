@@ -1,12 +1,10 @@
 /*jslint es5:true, white:false */
-/*globals $, _, GLOB, console, window,
-    Deref */
+/*globals $, Deref, GLOB, console, window */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 var Embody;
 
 (function (W) { //IIFE
-
     var name = 'Embody',
         self, DB, $nav, toc;
 
@@ -83,8 +81,8 @@ var Embody;
 
             // TIER #2 ... sections within doc
             $.each(DIV, function (i2, SEC) {
-                var Sec; // + closure var "Div"
-
+                var Sec;
+                // + closure var "Div"
                 Sec = $('<section>').appendTo(Div);
                 $('<h2 class=dev>').text(i2).appendTo(Sec);
                 if (i1 !== 'Support') {
@@ -93,8 +91,8 @@ var Embody;
 
                 // TIER #3 ... sub-sections / articles
                 $.each(SEC, function (i3, ART) {
-                    var Art; // + closure var "Sec"
-
+                    var Art;
+                    // + closure var "Sec"
                     i3 = tryKey(i3, SEC); // objectify array
                     Art = $('<article>').appendTo(Sec);
                     $('<h3 class=dev>').text(i3).appendTo(Art);
@@ -102,8 +100,8 @@ var Embody;
 
                     // TIER #4 ... merge props and values / paragraphs
                     $.each(ART, function (i4, str) {
-                        var Par, txt, btn; // + closure var "Art"
-
+                        var Par, txt, btn;
+                        // + closure var "Art"
                         btn = $('<button class="tiny blue">');
                         txt = '<strong class=ref>' + i4 + ': </strong>';
                         txt += Deref(ART, i4, [i1, i2, i3, i4]);

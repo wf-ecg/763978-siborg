@@ -1,5 +1,4 @@
-/*jslint es5:true, white:false */
-/*globals $, Build, Jump, _, console, debug, main, window */
+/*globals $, Build, GLOB, Jump, console, main, window */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 var Handle;
@@ -59,8 +58,7 @@ var Handle;
         $('html').removeClass('debug');
 
         Build.sample('<div class=iphone>%_Components_Comps_header::mini</div>');
-//        Build.sample('<div class=iphone>%_Components_Articles_foo:Welcome</div>');
-
+        //        Build.sample('<div class=iphone>%_Components_Articles_foo:Welcome</div>');
         DEV();
     }
 
@@ -70,22 +68,17 @@ var Handle;
         var chevlvls = $('nav h2 + *');
 
         // on any hover add class hover
-        main.body
-        .on('mouseover', '*', function (evt) {
+        main.body.on('mouseover', '*', function (evt) {
             evt.stopPropagation();
             $(this).addClass('hover');
-        })
-        .on('mouseout', '*', function (evt) {
+        }).on('mouseout', '*', function (evt) {
             evt.stopPropagation();
             $(this).removeClass('hover');
-        })
-        .on('dblclick', '.iphone', function () {
+        }).on('dblclick', '.iphone', function () {
             $('#Showbox').toggleClass('hover');
-        })
-        .on('click', '.holdon', function () {
+        }).on('click', '.holdon', function () {
             W.alert('hold on there, bro');
-        })
-        .on('click', 'a[href^=#]', function (e) {
+        }).on('click', 'a[href^=#]', function (e) {
             // reassert control over anchor links
             e.preventDefault();
             // History.pushState({}, '', this.href);

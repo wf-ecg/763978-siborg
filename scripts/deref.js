@@ -1,5 +1,5 @@
 /*jslint es5:true, white:false */
-/*globals $, _, console, debug, exref, window */
+/*globals $, GLOB, _, console, debug, exref, window */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 var Deref;

@@ -1,6 +1,5 @@
 /*jslint es5:true, white:false */
-/*globals $, _, console, debug, window,
-    Deref */
+/*globals $, Deref, _, console, debug, window */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 var Build;

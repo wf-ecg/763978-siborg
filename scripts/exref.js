@@ -1,5 +1,5 @@
 /*jslint es5:true, white:false */
-/*globals $, _, console, debug, window */
+/*globals $, console, window */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 var Exref;
