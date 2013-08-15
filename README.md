@@ -14,3 +14,5 @@ Body text -- `mono text`
 
 [site]: http://site/
 
+
+    attempt to replace data by token and reference before embodying it
