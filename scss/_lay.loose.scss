@@ -1,0 +1,52 @@
+@import "__mix";
+/* LOOSE LAYOUT */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+body.LAY___ {
+
+    .follow {
+        font-family: Archer, Georgia, serif;
+        font-size: 16px;
+        font-weight: normal;
+        line-height: 20px;
+        margin-bottom: 9px;
+    }
+    #Feature {
+        h4 {
+            color: black;
+            font-size: 105%;
+            font-weight: bold;
+        }
+        ul {
+            padding-left: 2em;
+        }
+    }
+    footer {
+        color: #857b72;
+        clear: both;
+        border-top: 1px solid #e7e5e3;
+        font-family: Verdana;
+        font-size: 10px;
+        height: 2px;
+        line-height: 28px;
+        position: relative;
+        vertical-align: baseline;
+        @include clearfix();
+
+        #sharebar {
+            top: 0;
+            position: absolute;
+            right: 0;
+
+            p.cap {
+                text-decoration: none;
+                display: inline-block;
+                vertical-align: top;
+            }
+            img {
+                cursor: pointer;
+                margin: 6px;
+            }
+        }
+    }
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */

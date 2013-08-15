@@ -1,0 +1,124 @@
+@import "__mix";
+/* DEV and DEBUG / REFS and RESULTS */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+// hide by default
+.dev, .ref {
+    display: none;
+}
+body:not(.DEV___) {
+    #Support, #Components, #Giving {
+        display: none;
+    }
+    #Compositions {
+        background-color: #fff;
+    }
+}
+body.DEV___ {
+    #Support, #Components, #Giving {
+        background-color: #ddd;
+    }
+    #DEV {
+        background: none {
+            image: none !important;
+            color: green;
+        }
+    }
+    &.LAY___ #Body {
+        hr {
+            border-color: red !important;
+        }
+        article {
+            border: 1px solid red;
+        }
+    }
+    .dev, .ref {
+        display: initial;
+        visibility: initial;
+    }
+    .pool {
+        background-color: #ddd;
+        section {
+            border-top: 3px solid red;
+            padding-top: $rem * 3;
+        }
+    }
+    // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
+    .deref {
+        padding: 0 $rem;
+        > .ref {
+            background-color: #eee;
+            border-bottom: 1px solid red;
+        }
+        .res {
+            background-color: rgba(255,244,244,0.5);
+            @include clearfix();
+        }
+        .ref {
+            font-size: 90%;
+            opacity: 0.90;
+            + .ref {
+                white-space: nowrap;
+                border-right: 9px solid black;
+            }
+            .ref {
+                background-color: lime;
+                margin-top: 9px;
+
+                :before {
+                    content: '*';
+                }
+                .ref {
+                    background-color: orange;
+                    .ref {
+                        background-color: red;
+                        .ref {
+                            background-color: white;
+                        }
+                    }
+                }
+            }
+        }
+        span.ref {
+            clear: both;
+            float: right;
+            margin: 0 3px;
+            padding: 0 3px;
+        }
+    }
+    time {
+        border-bottom: 1px dashed pink;
+    }
+}
+/// END DEV___
+/*outside dev limits*/
+#Showbox {
+    background-color: $pale;
+    border: 1px solid gray;
+    height: $showboxH;
+    padding: $rem;
+    position: fixed;
+    width: $showboxW;
+    z-index: 99;
+
+    .beacon {
+        left: -5px;
+        position: absolute;
+        top: -5px;
+    }
+    .ref {
+        display: none;
+    }
+}
+#DEV {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+.tiny {
+    img {
+        width: 10%;
+        height: 10%;
+    }
+}

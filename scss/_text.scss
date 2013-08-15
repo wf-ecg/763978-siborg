@@ -1,0 +1,37 @@
+@import "__mix";
+/* TEXT and SPANs */
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+body.TXT___ #Body {
+    article p {
+        margin: $hem 0;
+    }
+    .shrink {
+        font-size: 80%;
+        line-height: 140%;
+    }
+    .detail {
+        button {
+            clear: both;
+        }
+        button.tiny {
+            clear: none;
+            display: inherit;
+            float: right;
+            font-size: 9px;
+            font-weight: normal;
+            opacity: 0.5;
+            a {
+                padding: 1px;
+            }
+        }
+        &.hover, &:hover {
+            .tiny {
+                opacity: 0.25;
+                &.hover, :hover {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */

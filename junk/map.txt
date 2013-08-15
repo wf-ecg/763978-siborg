@@ -1,0 +1,92 @@
+|-------------------|
+|   banner          |
+|-------------------|
+|   visit           |
+|-----|-------------|
+|  e  |             |
+|  v  |   george    |
+|  e  |             |
+|  n  |-------------|
+|  t  |   steve     |
+|  s  |             |
+|-----|-------------|
+
+
+REGIONS
+    Banner  (derived from first)
+    Intro   (first article)         "visit"
+    Left    (left)                  "events"    ...  no num mean right determines row span
+    Right   (right1)                "steve"
+            (right2)                "george"    ... <br><br> = <hr>
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+
+Visit our booth
+As a repeat Sibos exhibitor, we’re proud to give our customers an opportunity to visit and interact with our business leaders and relationship managers at our booth, No. 4B06.
+View exhibition floor map | View Wells Fargo booth rendering
+
+Stop by to take your picture in front of the Buffalo Bill stagecoach and learn more about our history. And “check in” with your smart phone or PDA device to receive a free gift.
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+Events
+We’re hosting a variety of events during the Sibos conference, including our annual Sibos Celebration reception at the elegant Taiko-en, and a booth welcome reception.
+
+Sunday, October 28
+5:00 p.m. – 8:00 p.m.
+Annual Sibos Celebration
+Taiko-en
+Space is limited, RSVP here.
+
+Tuesday, October 30
+Transparency: The new paradigm impacting Global Transaction Banking
+3:00 p.m. – 4:00 pm
+Katsura Room L5
+Hyatt Regency Hotel
+Space is limited, RSVP here.
+Please speak with your relationship manager about availability.
+
+Tuesday, October 30
+4:00 p.m. – 5:30 p.m.
+Booth reception invite
+Wells Fargo booth No. 4B06, Hall 4
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+Speakers
+
+George Doolittle,
+Head of Wells Fargo Global Payment Services
+Watch intro video | View bio (PDF*)
+
+
+
+PMPG – What’s up in the payments market place [Session details]
+Wednesday, October 31
+9:30 a.m. – 10:30 a.m.
+Community room 3
+
+Consumer payments and increasing regulatory requirements.
+The need for more transparency [Session details]
+Wednesday, October 31
+4:00 p.m. – 5:00 p.m.
+Community room 2
+
+Global transaction banking: In need of business insights? [Session details]
+Thursday, November 1
+11:00 a.m. – 12:00 p.m.
+Conference room 2
+
+
+Steve Ellis,
+Head of Wells Fargo Wholesale Services
+Watch intro video | View bio (PDF*)
+
+
+
+Brave new leaders in IT [Session details]
+Monday, October 29
+4:00 p.m. – 5:00 p.m.

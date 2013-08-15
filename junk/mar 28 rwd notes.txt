@@ -1,0 +1,51 @@
+
+
+In the past, our projects have been more short lived. The kind of property-refinement that development teams usually enjoy hasn't been a big part of it. But the breadth of our work brings us a range of new opportunities, and responsive design is a growing concern. — J. D. Buckle
+
+"data site" and "feature site" are combinations of ranges from multiple spectrums 
+Spectrum is an example of quantity and quality in tandem; e.g., light THz: 505< yellow >525< green >575
+
+here are our desires, we want you do <blank>
+	skips over all the thought
+	we want <blank> because we desire <blank>
+	we really desire <blank>, what can you do for us
+
+desire precedes strategy
+	here are our desires, how do we satisfy them
+data precedes feature 
+	here’s the data, how do we feature it
+function precedes form
+	we need to feature this, how shall we form it
+
+	here’s are our goals
+		how do we support it
+		how do you organize it
+
+
+
+
+
+
+
+
+Feature is not vs Utility (Feature is a vague word)
+
+Promotion (natural or artifice)
+	feature ==> Promotional
+	function ==> Utility
+	data ==> Utility
+	form ==> neutral
+	flash ==>  Promotional
+
+Adapting to data qualities, plots & ranges (e.g. thresholds on continuum, such screen widths)
+
+Adaptively react to:
+	Responsive (automatic, fluid) detect + respond
+		time (meetings, event day)
+		place (gps, selection)
+		device (lap, desk, palm)
+	Interactive  (selected, forced) act + react
+		option (choice, preference setting)
+		navigation (menu, link, gesture)
+
+
