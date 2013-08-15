@@ -7,12 +7,16 @@ var Jump;
 (function (W) {
     //IIFE
     var name = 'Jump',
-        self, G;
+        G,
+        self = new Global(name, '(scroller)'),
+        C = W.console,
+        Df;
 
-    console.quebug('load ' + name + ' (scroller)');
-
+    Df = { // DEFAULTS
+        dat: {},
+    };
     /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-
+    /// INTERNAL
     G = {
         lastAnc: [],
         lastPos: [],

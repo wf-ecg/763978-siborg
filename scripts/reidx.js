@@ -7,11 +7,16 @@ var Reidx;
 
 (function (W) { //IIFE
     var name = 'Reidx',
-        self, DB;
-    console.quebug('load ' + name + ' (expandro)');
+        DB,
+        self = new Global(name, '(expandro)'),
+        C = W.console,
+        Df;
 
+    Df = { // DEFAULTS
+        dat: {},
+    };
     /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-
+    /// INTERNAL
     // look inside object from array for a key to use instead of index
 
     function reindexKey(val, idx, all) {

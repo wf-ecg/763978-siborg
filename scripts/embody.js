@@ -6,11 +6,16 @@ var Embody;
 
 (function (W) { //IIFE
     var name = 'Embody',
-        self, DB, $nav, toc;
+        DB, $nav, toc,
+        self = new Global(name, '(demonstrator)'),
+        C = W.console,
+        Df;
 
-    console.quebug('load ' + name + ' (demonstrator)');
-
+    Df = { // DEFAULTS
+        dat: {},
+    };
     /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+    /// INTERNAL
 
     function groupTOC() {
         var x = $();

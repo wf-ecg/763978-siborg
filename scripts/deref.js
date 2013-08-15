@@ -7,12 +7,16 @@ var Deref;
 (function (W) {
     //IIFE
     var name = 'Deref',
-        self, DB, Build;
+        DB, Build,
+        self = new Global(name, '(translator)'),
+        C = W.console,
+        Df;
 
-    console.quebug('load ' + name + ' (translator)');
-
+    Df = { // DEFAULTS
+        dat: {},
+    };
     /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-
+    /// INTERNAL
     // cleanup line endings
 
     function replaceNewlines(str) {
@@ -52,7 +56,7 @@ var Deref;
 
     function rebuild(ref) {
         try {
-            return Build(fetch(ref));
+            return Build.make(fetch(ref));
         } catch (err) {
             console.error('rebuild', err, ref);
         }

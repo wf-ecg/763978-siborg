@@ -5,12 +5,15 @@ var Handle;
 
 (function (W) { //IIFE
     var name = 'Handle',
-        self = {};
+        self = new Global(name, '(event handlers)'),
+        C = W.console,
+        Df;
 
-    console.quebug('load ' + name + ' (event handlers)');
-
+    Df = { // DEFAULTS
+        dat: {},
+    };
     /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-
+    /// INTERNAL
     // allow the css for these groups
 
     function enableCssDomains() {

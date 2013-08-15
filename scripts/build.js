@@ -6,11 +6,16 @@ var Build;
 
 (function (W) { //IIFE
     var name = 'Build',
-        TMPL, logger, methods, blank = '';
+        TMPL, logger, methods, blank = '',
+        self = new Global(name, '(templatise)'),
+        C = W.console,
+        Df;
 
-    console.quebug('load ' + name + ' (templatise)');
-
+    Df = { // DEFAULTS
+        dat: {},
+    };
     /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+    /// INTERNAL
 
     function flat(x) {
         x = _.isArray(x) ? x : [x]; // already primitive?
@@ -107,7 +112,7 @@ var Build;
 
     /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
-    function self(obj) {
+    function _self(obj) {
         var datobj, modnom, tplnom, tpltxt;
         // Build O.result FROM O.data * O.template
         datobj = obj.data;
@@ -155,6 +160,7 @@ var Build;
             TMPL = dat;
             this.activate(_.isObject(TMPL));
         },
+        make: _self,
     };
     $.extend(self, methods);
 

@@ -6,11 +6,15 @@ var Exref;
 
 (function (W) { //IIFE
     var name = 'exref',
-        self;
+        self = new Global(name, '(extract refs)'),
+        C = W.console,
+        Df;
 
-    console.quebug('load ' + name + ' (extract refs)');
-
+    Df = { // DEFAULTS
+        dat: {},
+    };
     /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+    /// INTERNAL
 
     function heuro(str) {
         return [str.split(/::|:/), str.split(/::/).length + str.split(/:/).length];
