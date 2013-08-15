@@ -1,4 +1,5 @@
-/*globals $, Build, GLOB, Jump, console, main, window */
+/*jslint es5:true, white:false */
+/*globals $, Build, GLOB, Global, Jump, Main, console, window */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 var Handle;
@@ -71,7 +72,7 @@ var Handle;
         var chevlvls = $('nav h2 + *');
 
         // on any hover add class hover
-        main.body.on('mouseover', '*', function (evt) {
+        Main.body.on('mouseover', '*', function (evt) {
             evt.stopPropagation();
             $(this).addClass('hover');
         }).on('mouseout', '*', function (evt) {
@@ -85,7 +86,7 @@ var Handle;
             // reassert control over anchor links
             e.preventDefault();
             // History.pushState({}, '', this.href);
-            main.focus(this.hash);
+            Main.focus(this.hash);
         });
 
         // Show all tier 2 (hover) details
