@@ -1,8 +1,10 @@
-//@import "__mix";
-/* IE */
+/* MSIE */
+@import "__mix";
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-body {
-    margin-left: 0;
-/*    border-left: 1rem solid pink;*/
+html.msie {
+    body {
+        margin-left: 0;
+        /* border-left: 1rem solid pink;*/
+    }
 }
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */

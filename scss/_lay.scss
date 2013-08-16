@@ -1,5 +1,5 @@
-@import "__mix";
 /* LAYOUT and DIVs */
+@import "__mix";
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 body.LAY___ {
     @include bodygrad();
@@ -89,3 +89,5 @@ body.LAY___ {
     }
 }
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+@import "_lay.loose";
+@import "_lay.mobile";

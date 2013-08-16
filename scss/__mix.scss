@@ -1,47 +1,5 @@
-@import "compass/css3";
-@import "compass/css3/user-interface";
-
-$default-transition-delay   : false;
-$default-transition-duration: 0.5s;
-$default-transition-property: all;
-$default-transition-function: ease-in;
-
-@mixin dpix($prop, $rem){
-    #{$prop}: $rem * 1px;
-    #{$prop}: $rem * 1rem;
-}
-
-// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
-
-$leftnav: 18rem;
-$leading: 1.4;
-$rem: 1rem; $hem: 0.5rem; $qem: 0.25rem;
-
-$beige1: #eee3da; $beige2: #d7ccc3;
-$blue1: #779fdf; $blue2: #6b83b2;
-$gray1: #999; $gray2: #777;
-$red1: #c21737; $red2: #8c081d;
-$brown: #973f1e;
-$brick: #bb0826;
-$blue: #336699;
-$paper: #f9f6f1;
-
-$clear: rgba(255,255,255,0);
-$pale: rgba(255,255,255,0.7);
-$target: rgba(255, 111, 111, 0.5); // #ff5555; reddish
-$shad: rgba(0,0,0,0.33);
-
-$resp: 800px;
-$debug: 1;
-
-// fonts
-$SM: 0.666rem;
-$MD: 0.8rem;
-$LG: 1.1rem;
-
-$showboxW: 400px;
-$showboxH: 700px;
-
+/* mix */
+@import "__fun";
 // - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
 @mixin bodygrad () {
     @include background-image( linear-gradient(bottom left, #dcb, #f2f2f2, #eee, #f2f2f2, #def) );
@@ -81,14 +39,5 @@ $showboxH: 700px;
         content: ' >';
     }
 }
-@mixin clearfix(){
-    &:after {
-        clear: both;
-        content: "";
-        display: table;
-        /* clearfix */
-    }
-}
-// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - //
 
 //* >^º!º^< */
