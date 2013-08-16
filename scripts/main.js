@@ -35,14 +35,11 @@ Modernizr.load([
         CDN + 'lib/ie/html5shiv.js',
         CDN + 'lib/ie/nwmatcher.min.js', /* css3 selector help */
         CDN + 'lib/ie/selectivizr-min.js', /* css3 polyfill */
-        './styles/ie.css',
         './scripts/fixie.js', /* homebrew bondo */
     ],
     both: [
         CDN + 'lib/underscore/js-1.4.4/underscore.js',
         CDN + 'lib/underscore/string-2.3.0/underscore.string.js',
-        './styles/dev.css',
-        './styles/screen.css',
     ],
     complete: function () {
         Data = new Global('Data', '(catchall data fixture)');
@@ -81,6 +78,9 @@ Modernizr.load([
     test: !W.debug,
     yep: [
         CDN + 'lib/js/ecg-ga.js',
+    ],
+    nope: [
+        './styles/dev.css',
     ],
 },
 ]);
