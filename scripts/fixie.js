@@ -1,11 +1,13 @@
 /*jslint es5:true, white:false */
-/*globals $, console, debug, window */
+/*globals $, debug, window */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 $(function () {
+    var C = W.console;
+
     $('body').on('click', 'button', function () {
         var me = $(this);
-        console.warn(me.find('a').first().attr('href'));
+        C.warn(me.find('a').first().attr('href'));
     });
 });
 

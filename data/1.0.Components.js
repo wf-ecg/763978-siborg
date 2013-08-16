@@ -1,5 +1,5 @@
 /*jslint es5:true, white:false */
-/*globals $, DATA, _, console, window */
+/*globals $, DATA, _, window */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 //
 // key assemblages of tiny data bits

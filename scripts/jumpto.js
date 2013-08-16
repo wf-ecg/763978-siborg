@@ -1,5 +1,5 @@
 /*jslint es5:true, white:false */
-/*globals $, _, console, debug, window */
+/*globals $, _, debug, window */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 var Jump;
@@ -37,7 +37,7 @@ var Jump;
         G.speed = G.normal / (!isNaN(style) ? style : 1);
 
         if (debug) {
-            console.debug(name + ':', anc);
+            C.debug(name + ':', anc);
         }
         if (self.init !== true) {
             self.init();

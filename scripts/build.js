@@ -1,5 +1,5 @@
 /*jslint es5:true, white:false */
-/*globals $, Deref, _, console, debug, window */
+/*globals $, Deref, _, debug, window */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 var Build;
@@ -69,7 +69,7 @@ var Build;
             logger.push(keyobj, [('TPL:' + tplstr), ('OUT:' + out)]);
         }
         if (debug && !partial) {
-            console.log(logger);
+            C.log(logger);
             logger = blank;
         }
         return out;

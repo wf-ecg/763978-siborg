@@ -1,5 +1,5 @@
 /*jslint es5:true, white:false */
-/*globals $, _, console, window */
+/*globals $, _, window */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 var TMPL = {};

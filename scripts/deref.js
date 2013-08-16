@@ -1,5 +1,5 @@
 /*jslint es5:true, white:false */
-/*globals $, GLOB, _, console, debug, exref, window */
+/*globals $, GLOB, _, debug, exref, window */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 var Deref;
@@ -44,7 +44,7 @@ var Deref;
                 };
                 res = res[posi.a] || res[posi.b] || res[posi.c] || posi.d;
             } catch (err) {
-                console.error('Deref.fetch', err, ref);
+                C.error('Deref.fetch', err, ref);
                 res = ref.source;
             }
         }
@@ -58,7 +58,7 @@ var Deref;
         try {
             return Build.make(fetch(ref));
         } catch (err) {
-            console.error('rebuild', err, ref);
+            C.error('rebuild', err, ref);
         }
     }
     W.xdb = rebuild; // expose
@@ -91,7 +91,7 @@ var Deref;
             out = ['<div class="res">'];
 
             if (debug) {
-                console.log(name + '-ing', [msg, _.pluck(refs, 'source')]);
+                C.log(name + '-ing', [msg, _.pluck(refs, 'source')]);
             }
 
             $.each(refs, function (i, ref) {

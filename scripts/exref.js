@@ -1,5 +1,5 @@
 /*jslint es5:true, white:false */
-/*globals $, console, window */
+/*globals $, window */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 var Exref;
@@ -83,7 +83,7 @@ var Exref;
         if (out[0]) {
             // objectify each ref
             out[0] = $.map(refs, expandRef);
-            console.debug(name + '-ing found', out[0].length, 'ref(s)', out[0]);
+            C.debug(name + '-ing found', out[0].length, 'ref(s)', out[0]);
         }
         return out; // [refs, rest]
     };

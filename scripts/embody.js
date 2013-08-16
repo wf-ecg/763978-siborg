@@ -1,5 +1,5 @@
 /*jslint es5:true, white:false */
-/*globals $, Deref, GLOB, console, window */
+/*globals $, Deref, GLOB, window */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 var Embody;
@@ -124,10 +124,10 @@ var Embody;
             DB = obj;
             $nav = $(nav || 'nav.dev');
 
-            console.groupCollapsed(name, 'exref/deref');
+            C.groupCollapsed(name, 'exref/deref');
             loopPool(); // spill all data to body
             groupTOC(); // clean up TOC article buttons
-            console.groupEnd();
+            C.groupEnd();
         },
     };
 

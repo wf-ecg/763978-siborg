@@ -1,5 +1,5 @@
 /*jslint es5:true, white:false */
-/*globals $, _, console, debug, window */
+/*globals $, _, debug, window */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 //  force array to share indexed values thru key property expandos
@@ -25,7 +25,7 @@ var Reidx;
             return;
         }
         if (debug > 1) {
-            console.debug(name + 'Key', idx, 'as', [val.key, val]);
+            C.debug(name + 'Key', idx, 'as', [val.key, val]);
         }
 
         // double ref from name as well as index (leading "dot")
@@ -44,13 +44,13 @@ var Reidx;
         // objects need to be recursed
         else if (_.isObject(obj)) {
             if (debug) {
-                console.debug(name + '-ing', obj);
+                C.debug(name + '-ing', obj);
             }
             $.each(obj, reindexAll);
         }
         // everything else
         else {
-            console.error(name + ' string? ya must be jokin');
+            C.error(name + ' string? ya must be jokin');
         }
     }
 
@@ -58,9 +58,9 @@ var Reidx;
         // make copy of DATA
         DB = $.extend(true, {}, obj);
 
-        console.groupCollapsed(name, '...');
+        C.groupCollapsed(name, '...');
         reindexAll(DB); // treat all arrays
-        console.groupEnd();
+        C.groupEnd();
 
         return DB;
     };

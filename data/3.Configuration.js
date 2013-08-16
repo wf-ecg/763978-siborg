@@ -1,11 +1,10 @@
 /*jslint es5:true, white:false */
-/*globals $, _, console, debug, window */
+/*globals $, _, debug, window */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - *
 making 'pages' / views
 useing current infrsctucure
 lets try makign a nicely marked up VIEW configuration
 */
-
 
 DATA.Configuration = {
     Home: [{
@@ -33,7 +32,6 @@ DATA.Configuration = {
     +       'Wells Fargo does not endorse and is not responsible for the content, links, privacy policy, or security policy of the website.</p>',
     }],
 };
-
 
 /*
 
@@ -89,20 +87,13 @@ DATA.Configuration = {
     {{%_Support_FILES_george-bio::link:doc}}
  - - - - - - - - - - - - - - - - - - - - - - - - - -
 
-
-
-
-
     using css nudge <section> articles into place
     items will need to have ids or class for this to happen
     makes sense that they would derive that from their data keys
 
-
-
     layouts are like templates
     "templates"  now are customizers and contextualizers
     "layouts" should be a way to arrange regions
-
 
     currently the data is all there in a list
     some needs to be structured (h1,etc) and classified ("fancy")
@@ -120,7 +111,5 @@ DATA.Configuration = {
 
             placement into a "region"
 
-
  */
-
 

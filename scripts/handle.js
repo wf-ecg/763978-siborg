@@ -1,5 +1,5 @@
 /*jslint es5:true, white:false */
-/*globals $, Build, GLOB, Global, Jump, Main, console, window */
+/*globals $, Build, GLOB, Global, Jump, Main, window */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 var Handle;
